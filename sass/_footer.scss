@@ -1,16 +1,38 @@
 footer{
   background-color: rgb(39, 39, 39);
-  h1{
+  padding: 10px;
+  padding-bottom: 3px;
+  h3{
+      font-family: Shrikhand;
       color: white;
-      font-size:larger;
-      padding-top: 5%;
-      padding-left: 5%;
       font-weight: 400;
+      padding-left: 15px;
+    }
+    ul{
+      padding: 15px;
+    }
+    li{
+      padding-bottom: 10px
     }
     a{ 
       color: white;
     }
     i{
       color: white;
+      padding-right: 10px;
     }
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+
+/* Desktop */
+@media (min-width: 767.98px) {
+
+footer{
+  text-align: right;
+  flex-direction: row;
+}
+
 }

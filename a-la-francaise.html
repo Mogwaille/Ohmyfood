@@ -14,78 +14,117 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <header>
-        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <img src="images/logo/ohmyfood@2x.svg" alt="Logo d'Ohmyfood">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="images/logo/ohmyfood@2x.svg" alt="Logo d'Ohmyfood">
+        </nav>
     </header>
     <main>
-        <section class="banner">
-            <img class="background"src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant À la française">
+        <section class="background">
+            <img class="background__image"src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du restaurant À la française">
         </section>
-        <section>
-            <div class="title">
-                <h1>À la française</h1>
+        <section class="menu">
+            <div class="menu__name">
+                <h1 class="menu__title">À la française</h1>
                 <i class="fa-regular fa-heart"></i>
             </div>
-            <div class="menu">
+            <div class="entrees">
                 <h2>ENTRÉES</h2>
                 <article class="menu__button">
-                    <h3>Tartare de poulpe acidulé</h3>
-                    <p>Aux zestes d'orange</p>
-                    <p>25</p><span>€</span>
+                    <div class="plats">
+                        <h3>Tartare de poulpe acidulé</h3>
+                        <p>Aux zestes d'orange</p>
+                    </div>
+                    <div class="prix">
+                        <p>25€</p>
+                    </div>
                 </article>
                 <article class="menu__button">
-                    <h3>Velouté de légumes d'antan</h3>
-                    <p>Carotte, panais, topinambour</p>
-                    <p>35</p><span>€</span>
+                    <div class="plats">
+                        <h3>Velouté de légumes d'antan</h3>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <div class="prix">
+                        <p>35€</p>
+                    </div>
                 </article>
                 <article class="menu__button">
-                    <h3>Soupe à l'oignon</h3>
-                    <p>Revisitée</p>
-                    <p>20</p><span>€</span>
+                    <div class="plats">
+                        <h3>Soupe à l'oignon</h3>
+                        <p>Revisitée</p>
+                    </div>
+                    <div class="prix">
+                        <p>20€</p>
+                    </div>
                 </article>
             </div>
-            <div class="menu">
+            <div class="plats">
                 <h2>PLATS</h2>
                 <article class="menu__button">
-                    <h3>Coquilles Saint-Jacques</h3>
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40</p><span>€</span>
+                    <div class="plats">
+                        <h3>Coquilles Saint-Jacques</h3>
+                        <p>Accompagnées d'une purée de panais</p>
+                    </div>
+                    <div class="prix">
+                        <p>40€</p>
+                    </div>
                 </article>
                 <article class="menu__button">
-                    <h3>Magret de canard</h3>
-                    <p>Et parmentier de pommes de terre</p>
-                    <p>35</p><span>€</span>
+                    <div class="plats">
+                        <h3>Magret de canard</h3>
+                        <p>Et parmentier de pommes de terre</p>
+                    </div>
+                    <div class="prix">
+                        <p>35€</p>
+                    </div>
                 </article>
                 <article class="menu__button">
-                    <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44</p><span>€</span>
+                    <div class="plats">
+                        <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <div class="prix">
+                        <p>44€</p>
+                    </div>
                 </article>
             </div>
-            <div class="menu">
+            <div class="desserts">
                 <h2>DESSERTS</h2>
                 <article class="menu__button">
-                    <h3>Pétales de violettes glacés</h3>
-                    <p>Et purée de noisettes</p>
-                    <p>18</p><span>€</span>
+                    <div class="plats">
+                        <h3>Pétales de violettes glacés</h3>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <div class="prix">
+                        <p>18€</p>
+                    </div>
                 </article>
                 <article class="menu__button">
-                    <h3>Fondant au chocolat</h3>
-                    <p>Revisité</p>
-                    <p>22</p><span>€</span>
+                    <div class="plats">
+                        <h3>Fondant au chocolat</h3>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="prix">
+                        <p>22€</p>
+                    </div>
                 </article>
                 <article class="menu__button">
-                    <h3>Millefeuille croustillant</h3>
-                    <p>Myrtilles et pâte d'amande</p>
-                    <p>23</p><span>€</span>
+                    <div class="plats">
+                        <h3>Millefeuille croustillant</h3>
+                        <p>Myrtilles et pâte d'amande</p>
+                    </div>
+                    <div class="prix">
+                        <p>23€</p>
+                    </div>
                 </article>
             </div>
             <button class="commander__button">Commander</button>
         </section>
     </main>
     <footer>
-        <img src="images/logo/ohmyfood@2x.svg" alt="Logo d'Ohmyfood">
+        <h3>ohmyfood</h3>
         <ul>
            <li>
             <i class="fa-solid fa-utensils"></i>
@@ -103,6 +142,7 @@
            </li>
         </ul>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
+@charset "UTF-8";
 ::-moz-placeholder {
   color: #000;
 }
-
 ::placeholder {
   color: #000;
 }
@@ -15,7 +15,7 @@ body {
   margin: 0px;
 }
 
-body button {
+button {
   cursor: pointer;
 }
 
@@ -32,30 +32,40 @@ header {
   padding: 15px;
 }
 
-a {
-  float: left;
-  padding-top: 10px;
-  padding-left: 10px;
-  font-size: larger;
-}
-
 footer {
   background-color: rgb(39, 39, 39);
+  padding: 10px;
+  padding-bottom: 3px;
 }
-footer h1 {
+footer h3 {
+  font-family: Shrikhand;
   color: white;
-  font-size: larger;
-  padding-top: 5%;
-  padding-left: 5%;
   font-weight: 400;
+  padding-left: 15px;
+}
+footer ul {
+  padding: 15px;
+}
+footer li {
+  padding-bottom: 10px;
 }
 footer a {
   color: white;
 }
 footer i {
   color: white;
+  padding-right: 10px;
 }
 
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Desktop */
+@media (min-width: 767.98px) {
+  footer {
+    text-align: right;
+    flex-direction: row;
+  }
+}
 .search {
   background-color: rgb(233, 233, 233);
   text-align: center;
@@ -91,16 +101,15 @@ footer i {
 }
 
 .fonction {
-  margin-left: 15px;
+  padding: 15px;
 }
 .fonction button {
+  position: relative;
   background: rgb(243, 243, 243);
-  margin-left: 20px;
   box-shadow: 5px 5px 5px rgb(198, 198, 198);
   display: flex;
-  height: 70px;
-  width: 85%;
-  padding: 23px 16px;
+  width: 100%;
+  padding: 10px;
   align-items: center;
   border-radius: 15px;
   font-size: 15px;
@@ -111,10 +120,15 @@ footer i {
   margin-left: 20px;
 }
 .fonction i {
-  color: #9356DC;
   margin-left: 20px;
 }
+.fonction button:hover {
+  color: #9356DC;
+}
 .fonction__number {
+  position: absolute;
+  top: 22px;
+  left: -10px;
   background-color: #9356DC;
   color: white;
   display: flex;
@@ -124,59 +138,131 @@ footer i {
   border-radius: 100px;
 }
 
-.list {
+.restaurant {
   background-color: rgb(233, 233, 233);
+  padding: 15px;
 }
-.list h2 {
-  padding-top: 50px;
-  padding-left: 20px;
-}
-.list img {
+.restaurant img {
   height: 150px;
-  width: 310px;
-  margin-left: 5px;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.list__content {
+.restaurant__content {
   background-color: white;
   color: black;
-  margin-left: 5px;
-  border-radius: 0px 0px 20px 20px;
-  width: 310px;
-  height: 75px;
+  border-radius: 20px 20px 20px 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding-bottom: 1px;
 }
-.list a {
+.restaurant a {
+  position: relative;
   background-color: rgb(233, 233, 233);
 }
-
-.img span {
+.restaurant__new1 {
   background-color: lightgreen;
-  margin-left: 65%;
-  padding: 2%;
-  border-radius: 10%;
+  padding: 10px;
+  border-radius: 5px;
+  color: darkgreen;
+  position: absolute;
+  top: 820px;
+  right: 30px;
 }
-
-.background {
-  width: 100%;
+.restaurant__new2 {
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 5px;
+  color: darkgreen;
+  position: absolute;
+  top: 1075px;
+  right: 30px;
 }
-
-.title {
-  background-color: rgb(233, 233, 233);
-  font-family: Shrikhand;
-  text-align: center;
-  border-radius: 30px 30px 0px 0px;
+.restaurant__card {
+  margin-left: 10px;
 }
-.title i {
-  float: right;
-  margin-top: 10px;
-  margin-right: 30px;
+.restaurant__heart1 {
   font-size: x-large;
+  position: absolute;
+  top: 990px;
+  right: 40px;
+  background-color: white;
+  box-shadow: 0 200px 100px -100px white inset;
+  transition: box-shadow 1s;
+}
+.restaurant__heart1:hover {
+  background-color: #9356DC;
+  box-shadow: 0 200px 100px -100px #FF79DA inset;
+}
+.restaurant__heart2 {
+  font-size: x-large;
+  position: absolute;
+  top: 1250px;
+  right: 40px;
+}
+.restaurant__heart3 {
+  font-size: x-large;
+  position: absolute;
+  top: 1510px;
+  right: 40px;
+}
+.restaurant__heart4 {
+  font-size: x-large;
+  position: absolute;
+  top: 1770px;
+  right: 40px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Desktop */
+@media (min-width: 767.98px) {
+  .fonction {
+    padding-left: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .fonction button {
+    width: 28%;
+  }
+  .restaurant {
+    padding-left: 5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .restaurant__content {
+    width: 40%;
+  }
+}
+nav a {
+  font-size: x-large;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.background__image {
+  background-size: cover;
+  width: 100%;
+  height: 270px;
 }
 
 .menu {
   background-color: rgb(233, 233, 233);
+}
+.menu__title {
+  background-color: rgb(233, 233, 233);
+  font-family: Shrikhand;
+  text-align: left;
+  margin-top: 0px;
+  padding: 15px;
+}
+.menu i {
+  font-size: x-large;
+  position: absolute;
+  top: 365px;
+  left: 350px;
 }
 .menu h2 {
   margin-left: 10px;
@@ -198,6 +284,7 @@ footer i {
   margin-bottom: 20px;
   border: none;
   width: 85%;
+  justify-content: space-between;
 }
 
 .commander__button {
@@ -212,4 +299,67 @@ footer i {
   margin-left: 70px;
   margin-top: 20px;
   width: 60%;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Desktop */
+@media (min-width: 767.98px) {
+  .background {
+    width: 100%;
+    height: 450px;
+  }
+  .background__image {
+    background-size: cover;
+  }
+  .menu {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .menu__title {
+    text-align: center;
+  }
+  .menu__name i {
+    position: absolute;
+    top: 538px;
+    left: 1100px;
+  }
+  .entrees, .plats, .desserts {
+    padding-bottom: 25px;
+  }
+  .commander__button {
+    width: 25%;
+    margin-left: 30%;
+  }
+}
+.loader {
+  border-top: 10px solid #FF79DA;
+  border-left: 10px solid #FF79DA;
+  border-right: 10px solid #9356DC;
+  border-bottom: 10px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1.5s linear infinite;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=main.css.map */
