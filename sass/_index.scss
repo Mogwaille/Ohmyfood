@@ -79,69 +79,62 @@
         border-radius: 20px 20px 0px 0px;
         object-fit: cover;
     }
+    &__card{
+        padding: 15px;
+        margin-bottom: 15px;
+    }
     &__content {
       background-color: white;
       color: black;
       border-radius: 20px 20px 20px 20px;
-      margin-bottom: 10px;
       justify-content: space-between;
-      padding-bottom: 1px;
     }
     a{
       position: relative;
       background-color: rgb(233, 233, 233);
     }
-    &__new1{
-      background-color: lightgreen;
+    h3{
+        margin: 0;
+    }
+    p{
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    &__new{
+      background-color: #99E2D0;
       padding: 10px;  
       border-radius: 5px; 
-      color: darkgreen;
-      position: absolute;
-      top: 820px;
-      right: 30px;
+      color: #008766;
+      position: relative;
+      top: -125px;
+      right: -275px;
     }
-    &__new2{
-    background-color: lightgreen;
-      padding: 10px;  
-      border-radius: 5px; 
-      color: darkgreen;
-      position: absolute;
-      top: 1075px;
-      right: 30px;
-    }
-    &__card{
-        margin-left: 10px;
-    }
-    &__heart1{
+    .empty, .full{
         font-size:x-large;
         position: absolute;
-        top: 990px;
-        right: 40px;
-        background-color: white;
-        box-shadow: 0 200px 100px -100px white inset; 
-        transition: box-shadow 1s;
+        right: 35px;
+        bottom: -15px;
     }
-    &__heart1:hover{
-        background-color: #9356DC;
-        box-shadow: 0 200px 100px -100px #FF79DA inset;
+    .full{
+        background: linear-gradient(#9356DC, #FF79DA);
+        color: transparent;
+        opacity: 0;
+        -webkit-background-clip: text;
     }
-    &__heart2{
-        font-size:x-large;
-        position: absolute;
-        top: 1250px;
-        right: 40px;
+    &__heart:hover{
+        .full{
+            animation: heart 500ms;
+            animation-fill-mode: both;
+        }
     }
-    &__heart3{
-        font-size:x-large;
-        position: absolute;
-        top: 1510px;
-        right: 40px;  
+}
+
+@keyframes heart{
+    0%{
+        opacity: 0;
     }
-    &__heart4{
-        font-size:x-large;
-        position: absolute;
-        top: 1770px;
-        right: 40px;
+    100%{
+        opacity: 1;
     }
 }
 
@@ -152,22 +145,36 @@
 /* Desktop */
 @media (min-width: 767.98px) {
 
-.fonction {
-    padding-left: 5%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    button{
-        width: 28%;
+    .fonction {
+        flex-wrap: wrap;
+        flex-direction: row;
+        &__buttons{
+            display: flex;
+            gap: 30px;
+        }
+        button{
+            width: 33%;
+        }
     }
-}
 
-.restaurant{
-    padding-left: 5%;
-    flex-wrap: wrap;
-    flex-direction: row;
-    &__content{
-        width: 40%;
+    .restaurant{
+        flex-wrap: wrap;
+        flex-direction: row;
+        &__cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        &__new{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+          }
+          .empty, .full{
+              position: absolute;
+              right: 30px;
+              bottom: 40px;
+          }
     }
-}
 
 }

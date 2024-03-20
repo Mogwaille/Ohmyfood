@@ -1,0 +1,46 @@
+.reveal {
+    
+    animation: reveal 2s;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+    -moz-animation: reveal 2s; /* Firefox */
+    -webkit-animation: reveal 2s; /* Safari et Chrome */
+    -o-animation: reveal 2s; /* Opera */
+}
+
+@keyframes reveal {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes reveal { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes reveal { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes reveal { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
