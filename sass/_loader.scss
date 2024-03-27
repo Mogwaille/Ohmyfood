@@ -4,7 +4,8 @@
     height: 100%;
     -webkit-animation: fondu 3s;
     -o-animation: fondu 3s;
-    animation: fondu 3s;
+    animation: fondu 2s;
+    animation-delay: 3s;
     margin: auto;
     position: fixed;
     top: 0;
@@ -32,54 +33,30 @@
     left: 0;
     right: 0;
     bottom: 0;
-    animation-fill-mode: both;
-}
-
-@-webkit-keyframes spin{
-    0%{
-        transform: rotate(0deg);
-        z-index: 19;
-    }
-    100%{
-        transform: rotate(360deg);
-        opacity: 0;
-        transition: opacity ease-out;
-        z-index: -1;
-    }
+    /*animation-fill-mode: both;*/
 }
 
 @keyframes spin{
     0%{
         transform: rotate(0deg);
-        z-index: 19;
+        /*z-index: 19;*/
     }
     100%{
         transform: rotate(360deg);
-        opacity: 0;
+        /*opacity: 0;
         transition: opacity 0.4s ease-out;
-        z-index: -1;
-    }
-}
-
-@-webkit-keyframes fondu{
-    0%{
-        z-index: 9;
-    }
-    100%{
-        opacity: 0;
-        transition: opacity ease-out;
-        visibility: hidden;
-        z-index: -1;
+        z-index: -1;*/
     }
 }
 
 @keyframes fondu{
     0%{
-        z-index: 9;
+        /*z-index: 9;*/
+        opacity: 1;
     }
     100%{
         opacity: 0;
-        transition: opacity 0.4s ease-out;
+        /*transition: opacity 0.4s ease-out;*/
         z-index: -1;
     }
 }

@@ -1,25 +1,23 @@
 footer{
   background-color: rgb(39, 39, 39);
   padding: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 20px;
   h3{
       font-family: Shrikhand;
       color: white;
       font-weight: 400;
       padding-left: 15px;
     }
-    ul{
-      padding: 15px;
-    }
-    li{
-      padding-bottom: 10px
+    div{
+      padding-bottom: 10px;
     }
     a{ 
       color: white;
+      padding-left: 10px;
     }
     i{
       color: white;
-      padding-right: 10px;
+      padding-left: 15px;
     }
 }
 
@@ -31,8 +29,11 @@ footer{
 @media (min-width: 767.98px) {
 
 footer{
-  text-align: right;
-  flex-direction: row;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+  align-items: center;
+  gap: 75px;
 }
 
 }
